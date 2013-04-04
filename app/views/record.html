@@ -1,0 +1,22 @@
+
+<h1>Speech submission</h1>
+<p>Record 10 samples and you will be able to upload your submission.</p>
+
+<!-- DEBUGGING BUTTONS -->
+<input class="btn" ng-click="startRecording()" type="button" value="start recording" />
+<input class="btn" ng-click="stopRecording()" type="button" value="stop recording and play" />
+<audio controls autoplay></audio>
+
+<div>
+    <div class="well well-small" ng-repeat="thing in awesomeThings">
+      <button type="button" class="btn pull-right"><i class="icon-play"></i>Record</button>
+      {{thing}}
+    </div>
+</div>
+
+<button type="button" class="btn" disabled>Load more prompts</button>
+
+<hr />
+<p>I accepts everything, by clicking the upload button</p>
+<button type="button" class="btn" disabled>Upload</button>
+

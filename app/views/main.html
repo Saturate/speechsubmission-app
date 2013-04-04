@@ -1,0 +1,49 @@
+
+<h1>Speech submission</h1>
+<p>Please fill in these details</p>
+
+<form class="form-horizontal" ng-submit="saveDetails()">
+
+  <div class="control-group">
+    <label class="control-label" for="inputUsername">Username</label>
+    <div class="controls">
+      <input type="text" id="inputUsername" placeholder="anonymous">
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Gender</label>
+    <div class="controls">
+      <select>
+        <option></option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Pronunciation dialect</label>
+    <div class="controls">
+      <select>
+        <option></option>
+        <option>English</option>
+        <option>Bad English</option>
+        <option>Canadian English</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Microphone type</label>
+    <div class="controls">
+      <select>
+        <option></option>
+        <option>Build-In</option>
+        <option>Some fancy brand</option>
+      </select>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Save and start recording</button>
+</form>
